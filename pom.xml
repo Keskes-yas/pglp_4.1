@@ -23,3 +23,35 @@
     </dependency>
   </dependencies>
 </project>
+<build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.1</version>
+  			<configuration>
+  				<source>1.8</source>
+  				
+  				<target>1.8</target>
+  			</configuration>
+  		
+  		</plugin>
+  	</plugins>
+  </build>
+  <reporting> 
+    <plugins> 
+      <plugin> 
+        <groupId>org.apache.maven.plugins</groupId> 
+        <artifactId>maven-checkstyle-plugin</artifactId> 
+      </plugin>
+ 
+    
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+       
+      </plugin>
+    </plugins>
+  </reporting>
+</project>
+
